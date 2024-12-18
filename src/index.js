@@ -2,11 +2,11 @@ function updateTime() {
   //london
   let londonElement = document.querySelector("#london");
   if (londonElement) {
-    londonDateElement = londonElement.querySelector(".date");
-    londonTimeElement = londonElement.querySelector(".time");
+    let londonDateElement = londonElement.querySelector(".date");
+    let londonTimeElement = londonElement.querySelector(".time");
     let londonTime = moment().tz("Europe/London");
 
-    londonDateElement.innerHTML = moment().format("Do MMMM YYYY");
+    londonDateElement.innerHTML = londonTime.format("Do MMMM YYYY");
     londonTimeElement.innerHTML = londonTime.format(
       "H:mm:ss [<small>]A[</small>]"
     );
@@ -15,11 +15,11 @@ function updateTime() {
   //paris
   let parisElement = document.querySelector("#paris");
   if (parisElement) {
-    parisDateElement = parisElement.querySelector(".date");
-    parisTimeElement = parisElement.querySelector(".time");
+    let parisDateElement = parisElement.querySelector(".date");
+    let parisTimeElement = parisElement.querySelector(".time");
     let parisTime = moment().tz("Europe/Paris");
 
-    parisDateElement.innerHTML = moment().format("Do MMMM YYYY");
+    parisDateElement.innerHTML = parisTime.format("Do MMMM YYYY");
     parisTimeElement.innerHTML = parisTime.format(
       "H:mm:ss [<small>]A[</small>]"
     );
@@ -29,11 +29,11 @@ function updateTime() {
 
   let newYorkElement = document.querySelector("#new-york");
   if (newYorkElement) {
-    newYorkDateElement = newYorkElement.querySelector(".date");
-    newYorkTimeElement = newYorkElement.querySelector(".time");
+    let newYorkDateElement = newYorkElement.querySelector(".date");
+    let newYorkTimeElement = newYorkElement.querySelector(".time");
     let newYorkTime = moment().tz("America/New_York");
 
-    newYorkDateElement.innerHTML = moment().format("Do MMMM YYYY");
+    newYorkDateElement.innerHTML = newYorkTime.format("Do MMMM YYYY");
     newYorkTimeElement.innerHTML = newYorkTime.format(
       "H:mm:ss [<small>]A[</small>]"
     );
@@ -42,11 +42,11 @@ function updateTime() {
   //sydney
   let sydneyElement = document.querySelector("#sydney");
   if (sydneyElement) {
-    sydneyDateElement = sydneyElement.querySelector(".date");
-    sydneyTimeElement = sydneyElement.querySelector(".time");
+    let sydneyDateElement = sydneyElement.querySelector(".date");
+    let sydneyTimeElement = sydneyElement.querySelector(".time");
     let sydneyTime = moment().tz("Australia/Sydney");
 
-    sydneyDateElement.innerHTML = moment().format("Do MMMM YYYY");
+    sydneyDateElement.innerHTML = sydneyTime.format("Do MMMM YYYY");
     sydneyTimeElement.innerHTML = sydneyTime.format(
       "H:mm:ss [<small>]A[</small>]"
     );
