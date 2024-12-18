@@ -71,6 +71,7 @@ function updateCity(event) {
     "A"
   )}</small></div>
   </div>
+  <a href="https://wrld-clck-app.netlify.app">Homepage</a>
   `;
 }
 
